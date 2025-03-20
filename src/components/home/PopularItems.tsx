@@ -2,7 +2,6 @@
 
 import ProductSection from "./ProductSection";
 import ProductGrid from "../product/ProductGrid";
-import { AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 // Sample product data for popular items
