@@ -59,22 +59,6 @@ const products = [
 const PopularItems = () => {
   return (
     <div className="relative">
-      {/* Notification banner */}
-      <motion.div
-        className="fixed bottom-4 left-4 z-50 bg-red-600 text-white rounded-full py-1 pl-2 pr-4 flex items-center gap-1 shadow-lg"
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 300,
-          damping: 25
-        }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <AlertCircle className="w-5 h-5" />
-        <span className="text-sm font-medium">1 Issue</span>
-      </motion.div>
 
       <ProductSection title="EIGER HOT ITEMS" viewAllLink="/products?order=popular">
         <motion.div
